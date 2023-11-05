@@ -44,14 +44,14 @@ const showCanes = async() => {
         section.append(p1);
 
         const img = document.createElement("img");
-        img.src = "http://localhost:3000/" + cane.img;
+        img.src = "https://assignment13-ua56.onrender.com/" + cane.img;
         section.append(img);
     });
 }
 
 const getCanes = async() => {
     try {
-        return (await fetch("http://localhost:3000/api/hurricanes")).json();
+        return (await fetch("https://assignment13-ua56.onrender.com/api/hurricanes")).json();
     } catch (error) {
         console.log("error retrieving json");
         return "";
