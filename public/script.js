@@ -14,7 +14,7 @@ const showCanes = async() => {
 
 const getCanes = async() => {
     try {
-        return (await fetch("http://localhost:3000/api/hurricanes")).json();
+        return (await fetch("https://assignment13-ua56.onrender.com/api/hurricanes")).json();
     } catch (error) {
         console.log("error retrieving json");
         return "";
